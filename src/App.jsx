@@ -1,5 +1,11 @@
 function App() {
-  return <h1>React Tic-Tac-Toe practice start</h1>;
+  return (
+    <>
+      <main>
+        <div id="game-container">games</div>
+      </main>
+    </>
+  );
 }
 
 export default App;
