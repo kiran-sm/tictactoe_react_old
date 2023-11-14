@@ -2,7 +2,7 @@ function App() {
   return (
     <>
       <main>
-        <div id="game-container">games</div>
+        <div id="game-container">no updates</div>
       </main>
     </>
   );
