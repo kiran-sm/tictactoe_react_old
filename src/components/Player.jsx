@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Player({ intialName, symbol }) {
+export default function Player({ intialName, symbol, isActive }) {
   const [isEditing, setIsEditing] = useState(false);
   const [playerName, setPlayerName] = useState(intialName);
 
@@ -24,7 +24,7 @@ export default function Player({ intialName, symbol }) {
     btnCaption = "Save";
   }
   return (
-    <li>
+    <li className={isActive ? "active" : undefined}>
       <span className="player">
         {editablePlayerName}
         <span className="player-symbol">{symbol}</span>
