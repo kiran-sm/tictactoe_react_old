@@ -4,7 +4,7 @@ import { Fragment, useState } from "react";
 import Log from "./components/Log";
 
 function App() {
-  const [gameTurns, setGameTurns] = useState();
+  const [gameTurns, setGameTurns] = useState([]);
   const [activePlayer, setActivePlayer] = useState("X");
   function handleSelectSquare(rowIndex, colIndex) {
     setActivePlayer((currentActivePlayer) =>
